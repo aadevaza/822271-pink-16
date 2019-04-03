@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>PINK</title>
@@ -11,22 +11,20 @@
   </a>
   <nav class="page-header__nav main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Html Academy</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__link" href="index.html">Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="photo.html">Фотографии</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="form.html">Конкурс</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Html Academy</a>
+      </li>
+    </ul>
   </nav>
   <h1 class="page-header__title">Фотографии пользователей</h1>
 </header>
@@ -34,72 +32,99 @@
   <p class="page-main__text">
     Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
   </p>
-  <div class="photo-catalog">
-    <div class="photo-catalog__item photo-catalog__item--panorama">
-      <img class="photo-catalog__img photo-catalog__img--panorama" src="https://via.placeholder.com/350x150" width="100%" height="100">
-      <span class="photo-catalog__item-note">ПАНОРАМА ДНЯ</span>
-    </div>
-    <div class="photo-catalog__post post">
-      <p class="post__user-name"><b>Анна</b>(5 МИНУТ НАЗАД)</p>
-      <p class=post__text>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
-        задавайте свои вопросы!
-      </p>
-      <p class="post__like">НРАВИТСЯ: 215</p>
-    </div>
-    <div class="photo-catalog__item">
-      <img class="photo-catalog__img" src="https://via.placeholder.com/350x150" width="200" height="100">
-    </div>
-    <div class="photo-catalog__post post">
-      <p class="post__user-name"><b>Левон</b>(5 ЧАСОВ НАЗАД)</p>
-      <p class=post__text>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-      <p class="post__like">НРАВИТСЯ: 356</p>
-    </div>
-    <div class="photo-catalog__item">
-      <img class="photo-catalog__img" src="https://via.placeholder.com/350x150" width="200" height="100">
-    </div>
-    <div class="photo-catalog__post post">
-      <p class="post__user-name"><b>Антон</b>(12 ЧАСОВ НАЗАД)</p>
-      <p class=post__text>Соседи будут рады!</p>
-      <p class="post__like">НРАВИТСЯ: 666</p>
-    </div>
-    <div class="photo-catalog__item">
-      <img class="photo-catalog__img" src="https://via.placeholder.com/350x150" width="200" height="100">
-    </div>
-    <div class="photo-catalog__post post">
-      <p class="post__user-name"><b>Борис</b>(20 ЧАСОВ НАЗАД)</p>
-      <p class=post__text>Здесь могла быть ваша цитата о высоком и вечном.</p>
-      <p class="post__like">НРАВИТСЯ: 215</p>
-    </div>
-    <div class="photo-catalog__item">
-      <img class="photo-catalog__img" src="https://via.placeholder.com/350x150" width="200" height="100">
-    </div>
-    <div class="photo-catalog__post post">
-      <p class="post__user-name"><b>Сергей</b>(25 ЧАСОВ НАЗАД)</p>
-      <p class=post__text>Самая кубанская в мире!</p>
-      <p class="post__like">НРАВИТСЯ: 4</p>
-    </div>
-    <div class="photo-catalog__item">
-      <img class="photo-catalog__img" src="https://via.placeholder.com/350x150" width="200" height="100">
-    </div>
-    <div class="photo-catalog__post post">
-      <p class="post__user-name"><b>Максим</b>(40 ЧАСОВ НАЗАД)</p>
-      <p class=post__text>Где снег-то?</p>
-      <p class="post__like">НРАВИТСЯ: 150</p>
-    </div>
-    <div class="photo-catalog__item">
-      <img class="photo-catalog__img" src="https://via.placeholder.com/350x150" width="200" height="100">
-    </div>
-    <div class="photo-catalog__post post">
-      <p class="post__user-name"><b>Надежда</b>(45 ЧАСОВ НАЗАД)</p>
-      <p class=post__text>Всем GM и взаимные лайки!</p>
-      <p class="post__like">НРАВИТСЯ: 2560</p>
-    </div>
+  <div class="card">
+    <blockquote class="card__item">
+      <div class="card__picture">
+        <img class="card__img card__img--panorama" src="https://via.placeholder.com/350x150" height="100" alt="">
+        <span class="card__note">ПАНОРАМА ДНЯ</span>
+      </div>
+      <div class="card__sign">
+        <cite class="card__user-name"><b>Анна</b>(5 МИНУТ НАЗАД)</cite>
+        <p class=cad__text>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
+          задавайте свои вопросы!
+        </p>
+        <p class="card__like">НРАВИТСЯ: 215</p>
+      </div>
+    </blockquote>
+
+    <blockquote class="card__item">
+      <div class="card__picture">
+        <img class="card__img card__img--panorama" src="https://via.placeholder.com/200x100" width="200" height="100"
+             alt="">
+      </div>
+      <div class="card__sign">
+        <cite class="card__user-name">Левон</b>(5 ЧАСОВ НАЗАД)</cite>
+        <p class=cad__text>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+        <p class="card__like">НРАВИТСЯ: 356</p>
+      </div>
+    </blockquote>
+
+    <blockquote class="card__item">
+      <div class="card__picture">
+        <img class="card__img card__img--panorama" src="https://via.placeholder.com/200x100" width="200" height="100"
+             alt="">
+      </div>
+      <div class="card__sign">
+        <cite class="card__user-name"><b>Антон</b>(12 ЧАСОВ НАЗАД)</cite>
+        <p class=cad__text>Соседи будут рады!</p>
+        <p class="card__like">НРАВИТСЯ: 666</p>
+      </div>
+    </blockquote>
+
+    <blockquote class="card__item">
+      <div class="card__picture">
+        <img class="card__img card__img--panorama" src="https://via.placeholder.com/200x100" width="200" height="100"
+             alt="">
+      </div>
+      <div class="card__sign">
+        <cite class="card__user-name"><b>Борис</b>(20 ЧАСОВ НАЗАД)</cite>
+        <p class=cad__text>Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <p class="card__like">НРАВИТСЯ: 215</p>
+      </div>
+    </blockquote>
+
+    <blockquote class="card__item">
+      <div class="card__picture">
+        <img class="card__img card__img--panorama" src="https://via.placeholder.com/200x100" width="200" height="100"
+             alt="">
+      </div>
+      <div class="card__sign">
+        <cite class="card__user-name"><b>Сергей</b>(25 ЧАСОВ НАЗАД)</cite>
+        <p class=cad__text>Самая кубанская в мире!</p>
+        <p class="card__like">НРАВИТСЯ: 4</p>
+      </div>
+    </blockquote>
+
+    <blockquote class="card__item">
+      <div class="card__picture">
+        <img class="card__img card__img--panorama" src="https://via.placeholder.com/200x100" width="200" height="100"
+             alt="">
+      </div>
+      <div class="card__sign">
+        <cite class="card__user-name"><b>Максим</b>(40 ЧАСОВ НАЗАД)</cite>
+        <p class=cad__text>Где снег-то?</p>
+        <p class="card__like">НРАВИТСЯ: 150</p>
+      </div>
+    </blockquote>
+
+    <blockquote class="card__item">
+      <div class="card__picture">
+        <img class="card__img card__img--panorama" src="https://via.placeholder.com/200x100" width="200" height="100"
+             alt="">
+      </div>
+      <div class="card__sign">
+        <cite class="card__user-name"><b>Надежда</b>(45 ЧАСОВ НАЗАД)</cite>
+        <p class=cad__text>Всем GM и взаимные лайки!</p>
+        <p class="card__like">НРАВИТСЯ: 2560</p>
+      </div>
+    </blockquote>
+
   </div>
   <p class="page-text">Затмите их всех!</p>
   <p class="page-text">Выкладывайте все, что накопилось в телефоне</p>
   <section class="filter-post">
     <div class="filter-post__photo">
-      <img class="filter-post__img" src="https://via.placeholder.com/350x150" width="200" height="400">
+      <img class="filter-post__img" src="https://via.placeholder.com/350x150" width="200" height="400" alt="">
     </div>
     <ul class="filter-post__option filter-option">
       <li class="filter-option__item filter-option__item--clip"></li>
@@ -126,7 +151,8 @@
   </ul>
   <div class="footer__logo-html">
     <p class="footer__logo-html-text">Разработано</p>
-    <img class="footer__logo-html-img" src="https://via.placeholder.com/350x150" width="70" height="70" alt="логотип htmlacademy">
+    <img class="footer__logo-html-img" src="https://via.placeholder.com/350x150" width="70" height="70"
+         alt="логотип htmlacademy">
   </div>
 </footer>
 </body>

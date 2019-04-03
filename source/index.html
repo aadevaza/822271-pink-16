@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>PINK</title>
 </head>
 <body>
-<header class="page-header">
+<header class="page-header wrapper">
   <a class="page-header__link">
     <img class="page-header__logo" src="https://via.placeholder.com/350x150" width="86" height="35" alt="Логотип PINK">
   </a>
   <nav class="page-header__nav main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Html Academy</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="photo.html">Фотографии</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="form.html">Конкурс</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Html Academy</a>
+      </li>
+    </ul>
   </nav>
 </header>
-<main class="page-main">
+<main class="page-main wrapper">
   <h1 class="visually-hidden">Приложение-месседжер PINK</h1>
   <section class="app">
     <h2 class="app__title">Взгляните на жизнь иначе</h2>
@@ -60,6 +58,7 @@
         </p>
       </li>
       <li class="features__item">
+        <img class="features__item-img" src="https://via.placeholder.com/150x350" alt="">
         <h2 class="features__item-title">Заводит новых друзей</h2>
         <p class="features__item-text">
           Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -68,14 +67,6 @@
     </ul>
   </section>
   <section class="reviews">
-    <input class="reviews__radio" type="radio" name="review" value="review" id="btn-1" checked>
-    <input class="reviews__radio" type="radio" name="review" value="review" id="btn-2">
-    <input class="reviews__radio" type="radio" name="review" value="review" id="btn-3">
-    <div class="reviews__toggle toggle">
-      <label class="toggle__label" for="btn-1"></label>
-      <label class="toggle__label" for="btn-2"></label>
-      <label class="toggle__label" for="btn-3"></label>
-    </div>
     <ul class="reviews__list slider">
       <li class="slider__item">
         <h2 class="slider__item-title">Николай Петров</h2>
@@ -99,17 +90,14 @@
         </p>
       </li>
     </ul>
+    <div class="reviews__toggles slider__toggles">
+      <button class="slider__toggle" type="button"></button>
+      <button class="slider__toggle" type="button"></button>
+      <button class="slider__toggle" type="button"></button>
+    </div>
   </section>
   <section class="services">
     <h2 class="visually-hidden">Расценки на услуги</h2>
-    <input class="services__radio" type="radio" name="price" value="price" id="btn-4">
-    <input class="services__radio" type="radio" name="price" value="price" id="btn-5" checked>
-    <input class="services__radio" type="radio" name="price" value="price" id="btn-6">
-    <div class="services__toggle toggle">
-      <label class="toggle__label" for="btn-4"></label>
-      <label class="toggle__label" for="btn-5"></label>
-      <label class="toggle__label" for="btn-6"></label>
-    </div>
     <table class="cost">
       <tr>
         <th></th>
@@ -145,6 +133,11 @@
         <td></td>
       </tr>
     </table>
+    <div class="services__toggles slider__toggles">
+      <button class="slider__toggle" type="button"></button>
+      <button class="slider__toggle" type="button"></button>
+      <button class="slider__toggle" type="button"></button>
+    </div>
   </section>
   <section class="contacts">
     <div class="contacts__block address">
@@ -168,7 +161,7 @@
     </div>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer wrapper">
   <div class="footer__logo">
     <img class="footer__img" src="https://via.placeholder.com/350x150" width="250" height="70" alt="логотип PINK">
   </div>
@@ -179,7 +172,8 @@
   </ul>
   <div class="footer__logo-html">
     <p class="footer__logo-html-text">Разработано</p>
-    <img class="footer__logo-html-img" src="https://via.placeholder.com/350x150" width="70" height="70" alt="логотип htmlacademy">
+    <img class="footer__logo-html-img" src="https://via.placeholder.com/350x150" width="70" height="70"
+         alt="логотип htmlacademy">
   </div>
 </footer>
 </body>
