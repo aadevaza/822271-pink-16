@@ -1,0 +1,77 @@
+.app {
+  background-color: #1d2631;
+  position: relative;
+  margin-top: auto;
+}
+
+.app::before {
+  content: '';
+  position: absolute;
+  top: -290px;
+  left: 0;
+  height: 290px;
+  width: 270px;
+  background: url(../img/iphone-hand-mobile@1x.png) no-repeat;
+  background-position: left bottom;
+  background-size: 257px 286px;
+}
+
+.app__wrapper {
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__title {
+  display: none;
+}
+
+.app__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  padding: 15px 35px;
+  cursor: pointer;
+}
+
+.logo-stage {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-stage__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.logo-stage__link {
+  cursor: pointer;
+}
+
+.app__item {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__text {
+  line-height: 24px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: lighter;
+}
