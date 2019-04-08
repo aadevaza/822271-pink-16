@@ -1,0 +1,136 @@
+.services {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 47px;
+  padding-top: 91px;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+}
+
+.services__wrapper {
+  flex-direction: column;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+}
+
+.services__list {
+  position: relative;
+  left: 50%;
+  width: 100%;
+  margin-bottom: 38px;
+  margin-left: -568px;
+  border-collapse: collapse;
+  border-radius: 2px;
+}
+
+.services__head {
+  border-collapse: separate;
+  border-right: 2px solid #e5e5e5;
+}
+
+.services__empty {
+  display: block;
+  min-width: 150px;
+  background-color: #f2f2f2;
+}
+
+.services__tariff {
+  position: relative;
+  min-width: 274px;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  text-transform: uppercase;
+  background-color: #283645;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services__cost {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services__hit {
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+.services__hit::before {
+  content: "";
+  background: url("../img/bg-hit.svg") no-repeat;
+  background-size: 74px 73px;
+}
+
+.services__hit::after {
+  content: "хит";
+  padding: 15px 0 0 1px;
+  transform: rotate(-45deg);
+}
+
+.services__hit::after,
+.services__hit::before {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 76px;
+  height: 71px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services__row {
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.services__value {
+  padding: 13px 15px 16px 20px;
+}
+
+.services__option,
+.services__value {
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: left;
+  color: #283645;
+}
+
+.services__value-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.services__icon-no,
+.services__icon-yes,
+.services__option-name {
+  align-self: center;
+}
+
+.services__icon-yes {
+  fill: #3dc644;
+}
+
+.services__icon-no {
+  fill: #f25b26;
+  margin-left: auto;
+}
