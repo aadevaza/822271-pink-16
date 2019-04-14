@@ -20,18 +20,17 @@
   width: 100%;
 }
 
-.page-header.page-header__menu--opened {
+.page-header {
   min-height: 991px;
 }
 
-.page-header__not-main.page-header__menu--opened {
+.page-header__not-main {
   min-height: 496px;
   background-position-y: 261px;
-}
-
-.page-header__not-main {
   justify-content: flex-start;
 }
+
+
 
 .page-header__title {
   width: 300px;
@@ -42,4 +41,22 @@
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: @tablets) {
+  .page-header {
+    background-color: #283645;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position-y: 320px;
+  }
+  .page-header__item {
+    padding: 27px 20px 42px;
+  }
+  .page-header.page-header__menu--opened {
+    min-height: 984px;
+    background-position-y: 255px;
+    background-size: 1200px auto;
+    background-position: center 0;
+    background-position-y: 255px;
+  }
 }

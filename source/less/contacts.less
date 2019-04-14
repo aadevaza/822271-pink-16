@@ -70,3 +70,61 @@
 .contacts__item--address .contacts__text {
   width: 240px;
 }
+
+@media (min-width: 660px) {
+  .contacts {
+    padding-top: 46px;
+  }
+  .contacts__container {
+    width: 660px;
+    padding: 0 20px;
+  }
+  .contacts__header {
+    width: 370px;
+    margin: 0 auto 43px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-align: center;
+    color: #283645;
+  }
+  .contacts__wrapper {
+    padding-bottom: 0;
+  }
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contacts__item {
+    flex-grow: 0;
+    margin-bottom: 43px;
+  }
+  .contacts__phone {
+    align-self: flex-start;
+  }
+  .contacts__item:first-child {
+    margin-left: 44px;
+    margin-right: 92px;
+  }
+  .contacts__title {
+    margin-bottom: 4px;
+  }
+  .contacts__phone .contacts__title {
+    margin-bottom: 1px;
+  }
+  .contacts__phone .contacts__text {
+    text-transform: none;
+  }
+  .contacts__item {
+    flex-grow: 0;
+    margin-bottom: 43px;
+  }
+  .contacts__item--address {
+    flex-grow: 1;
+    margin-bottom: 18px;
+  }
+}

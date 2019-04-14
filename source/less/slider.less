@@ -18,6 +18,10 @@
   line-height: 30px;
 }
 
+.slider__item-about {
+  display: none;
+}
+
 .slider__item-text {
   margin: 0;
   font-size: 14px;
@@ -50,4 +54,32 @@
   font-size: 1px;
   background-color: transparent;
   border: 3px solid #283645;
+}
+
+@media (min-width: @tablets) {
+  .slider__item-text {
+    width: 620px;
+    font-size: 18px;
+    line-height: 1.67;
+    order: 1;
+
+  }
+  .slider__item-title {
+    font-size: 20px;
+    order: 2;
+  }
+  .slider__item-about {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.14;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-align: center;
+    color: #283645;
+    margin: 0;
+    order: 3;
+  }
+  .slider__toggle {
+    margin-top: 40px;
+  }
 }

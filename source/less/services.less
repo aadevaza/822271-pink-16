@@ -117,6 +117,7 @@
 
 .services__value-box {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -133,4 +134,61 @@
 .services__icon-no {
   fill: #f25b26;
   margin-left: auto;
+}
+
+@media (min-width: @tablets) {
+  .services {
+    padding-top: 92px;
+    padding-bottom: 29px;
+  }
+  .services__container {
+    padding: 0 20px;
+  }
+  .services__wrapper {
+    display: block;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  .services__list {
+    margin-left: -310px;
+    min-width: 620px;
+  }
+  .services__tariff {
+    min-width: 145px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .services__cost {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .services__hit::before {
+    left: -0.4px;
+    background-size: 62px 62px;
+  }
+  .services__hit::after {
+    padding-top: 10px;
+    padding-left: 4px;
+    font-weight: 400;
+  }
+  .services__option {
+    padding: 7px 15px 8px 16px;
+    font-weight: 400;
+    text-transform: none;
+  }
+  .services__value {
+    padding: 0 13px;
+  }
+  .services__option-name {
+    display: none;
+  }
+  .services__icon-no, .services__icon-yes {
+    display: block;
+    margin: 0 auto;
+  }
+  .services__toggles {
+    display: none !important;
+  }
 }

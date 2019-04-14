@@ -1,5 +1,4 @@
 .app {
-  background-color: #1d2631;
   position: relative;
   margin-top: auto;
 }
@@ -21,6 +20,7 @@
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
+  background-color: #1d2631;
 }
 
 .app__title {
@@ -74,4 +74,56 @@
   margin: 0;
   font-size: 14px;
   font-weight: lighter;
+}
+
+@media (min-width: @tablets) {
+  .app {
+    background-image: url(../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+    background-color: transparent;
+    background-position: 0 bottom;
+  }
+  .app::before {
+    display: none;
+  }
+  .app__title, .app__wrapper {
+    display: block;
+    text-align: center;
+  }
+  .app__wrapper {
+    width: 660px;
+    margin-bottom: 80px;
+    padding-right: 22px;
+    padding-left: 22px;
+    background-color: transparent;
+  }
+  .app__title {
+    margin-left: 0;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    letter-spacing: normal;
+    color: #ffffff;
+    width: 245px;
+    margin-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .app__item {
+    width: 298px;
+    margin-left: 22px;
+  }
+  .app__link {
+    margin-bottom: 47px;
+    max-width: 300px;
+  }
+  .logo-stage {
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  .app__text {
+    font-size: 18px;
+  }
 }

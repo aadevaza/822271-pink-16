@@ -16,3 +16,16 @@
   height: 50px;
   background: url("../img/bg-triangle-white-footer.svg") center top/100% 35px no-repeat;
 }
+
+@media (min-width: @tablets) {
+  .map {
+    height: 384px;
+    background: url(../img/bg-map-tablet@1x.jpg) no-repeat center;
+    background-size: 100% auto;
+  }
+  .map::before {
+    top: -6px;
+    height: 80px;
+    background-size: 100% 80px;
+  }
+}
